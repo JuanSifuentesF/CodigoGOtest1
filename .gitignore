@@ -1,0 +1,64 @@
+# ==================== #
+# 1. DEPENDENCIAS      #
+# ==================== #
+node_modules/
+.pnpm-store/  # Si usas pnpm
+bower_components/
+
+# ==================== #
+# 2. BUILD/ARTEFACTOS  #
+# ==================== #
+dist/
+dist-ssr/
+.temp/
+.cache/
+*.tsbuildinfo  # TypeScript
+.eslintcache
+
+# ==================== #
+# 3. ENTORNO/VARIABLES #
+# ==================== #
+.env
+.env.*
+!.env.example  # Plantilla SÍ debe incluirse
+.env.local
+.env.development
+.env.production
+
+# ==================== #
+# 4. LOGS Y REPORTES   #
+# ==================== #
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+coverage/  # Reportes de tests
+
+# ==================== #
+# 5. SHADCN/UI         #
+# ==================== #
+components.json  # Config generada (se recrea con el CLI)
+
+# ==================== #
+# 6. EDITORES/IDEs     #
+# ==================== #
+.vscode/*
+!.vscode/extensions.json  # Extensiones recomendadas SÍ se incluyen
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==================== #
+# 7. SISTEMA           #
+# ==================== #
+Thumbs.db
+Desktop.ini
+__pycache__/
+*.pyc
